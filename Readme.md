@@ -9,7 +9,7 @@ This dataset has the following advantages:
 
 <img src='https://github.com/Andrew-Zhu/GenImage/blob/main/Examples/visulization.png' width=1200>
 
-## (1) Dataset
+## Dataset
 
 The training set and testing set used in the paper can be downloaded in [Baidu Yunpan](https://pan.baidu.com/s/1i0OFqYN5i6oFAxeK6bIwRQ). The code is ztf1.
 
@@ -44,7 +44,7 @@ Each folder contains compressed files. After unzip the file, files under the dat
 │   ├── ...
 ```
 
-## (2) Detection Methods
+## Detection Methods
 
 We use the codes of detection methods provided in the corresponding paper. 
 
@@ -56,7 +56,7 @@ We use the codes of detection methods provided in the corresponding paper.
 - [F3Net](https://github.com/yyk-wew/F3Net)
 - [GramNet](https://github.com/liuzhengzhe/Global_Texture_Enhancement_for_Fake_Face_Detection_in_the-Wild)
 
-## (3) Benchmark
+## Benchmark
 - Table 3: Results of different methods trained on SD V1.4 and evaluated on different testing subsets.
 
 |   Method / Testing Subset  | Midjourney | SD V1.4 | SD V1.5 |  ADM | GLIDE | Wukong | VQDM | BigGAN | Avg Acc.(%) |
