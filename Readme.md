@@ -24,7 +24,12 @@ Each folder contains compressed files. After unzip the file, files under the dat
 │   │   ├── ai
 │   │   ├── nature
 ├── VQDM
-│   ├── ...
+│   ├── train
+│   │   ├── ai
+│   │   ├── nature
+│   ├── val
+│   │   ├── ai
+│   │   ├── nature
 ├── Wukong
 │   ├── ...
 ├── Stable Diffusion V1.4
