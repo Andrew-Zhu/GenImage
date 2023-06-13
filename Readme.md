@@ -1,15 +1,15 @@
 # GenImage: A Million-Scale Benchmark for Detecting AI-Generated Image
-Mingjian Zhu, Hanting Chen, Qiangyu Yan, Xudong Huang, Guanyu Lin, Wei Li, Zhijun Tu, Hailin Hu, Jie Hu, Yunhe Wang
+**Mingjian Zhu, Hanting Chen, Qiangyu Yan, Xudong Huang, Guanyu Lin, Wei Li, Zhijun Tu, Hailin Hu, Jie Hu, Yunhe Wang**
 
-GenImage is a million-scale AI-generated image detection dataset.
+This repository contains the GenImage dataset and the evaluated methods. GenImage is a million-scale AI-generated image detection dataset.
 This dataset has the following advantages:
 - Plenty of Images: Over one million <fake image, real image> pairs.
 - Rich Image Content: Using the same classes in ImageNet, i.e., 1000 classes images.
 - State-of-the-art Generators: Midjourney, Stable Diffusion, ADM, GLIDE, Wukong, VQDM, BigGAN.
 
-This repository contains the dataset and the evaluated methods.
+<img src='https://github.com/Andrew-Zhu/GenImage/blob/main/Examples/visulization.png' width=1200>
 
-## (1) DataSet
+## (1) Dataset
 
 The training set and testing set used in the paper can be downloaded in [Baidu Yunpan](https://pan.baidu.com/s/1i0OFqYN5i6oFAxeK6bIwRQ). The code is ztf1.
 
