@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="GenImage">
+  <meta name="keywords" content="GenImage">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GenImage</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <meta name="google-site-verification" content="6lbYN1vX7A4sD8SrVniq84UEKyEUSBgxeP7d3FjuuK0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- <link rel="icon" href="./static/images/icon.png"> -->
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <link rel="shortcut icon" href="path/to/favicon.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  </head>
+
+  <style>
+
+    #main{
+        position: relative;;
+        width: 1200px;
+    }
+
+    .box{
+        float: left;
+        padding: 15px 0 0 15px;
+/*        background-color: red;*/
+    }
+
+    .pic{
+        width: 500px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .pic img{
+        width: 500px;
+    }
+
+  </style>
+
+
+
+  <body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">GenImage:</h1>
+          <h2 class="title is-2 publication-title">A Million-Scale Benchmark for Detecting AI-Generated Image</h2>
+          <div class="is-size-5">
+            <span class="author-block">
+                <a href="" style="color:#008AD7;font-weight:normal;">Mingjian Zhu<sup></sup>
+                </a>,                
+            </span>
+
+            <span class="author-block">
+              <a href="" style="color:#008AD7;font-weight:normal;">Hanting Chen<sup></sup>
+                </a>, 
+            </span>
+
+            <span class="author-block">
+              <a href="" style="color:#008AD7;font-weight:normal;">Qiangyu Yan<sup></sup>
+                </a>, 
+            </span>
+
+            <span class="author-block">
+              <a href="" style="color:#008AD7;font-weight:normal;">Xudong Huang<sup></sup>
+                </a>, 
+            </span>
+
+            <span class="author-block">
+              <a href="" style="color:#008AD7;font-weight:normal;">Guanyu Lin<sup></sup>
+                </a>, 
+            </span>
+
+            <span class="author-block">
+              <a href="" style="color:#008AD7;font-weight:normal;">Wei Li<sup></sup>
+                </a>, 
+            </span>
+
+            <span class="author-block">
+              <a href="" style="color:#008AD7;font-weight:normal;">Zhijun Tu<sup></sup>
+                </a>, 
+            </span>
+
+            <span class="author-block">
+              <a href="" style="color:#008AD7;font-weight:normal;">Hailin Hu<sup></sup>
+                </a>, 
+            </span> 
+
+            <span class="author-block">
+              <a href="" style="color:#008AD7;font-weight:normal;">Jie Hu<sup></sup>
+                </a>, 
+            </span>  
+
+            <span class="author-block">
+              <a href="" style="color:#008AD7;font-weight:normal;">Yunhe Wang<sup></sup>
+                </a>,                       
+          </div>
+
+          <br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Huawei Noah’s Ark Lab </span>
+            <!-- <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b>UCLA; </span> -->
+            <!-- <span class="author-block"><b style="color:#00A4EF; font-weight:normal">&#x25B6 </b>Microsoft Research, Redmond; </span> -->
+            <!-- <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b>Microsoft Cloud & AI </span> -->
+          </div>
+
+          <br>
+         <!--  <div class="is-size-5 publication-authors">
+            <span class="author-block"><b style="color:#e08ba0; font-weight:normal"> <b>In CVPR2023</b> </b></span>
+          </div> -->
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2304.10592" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              
+              <span class="link-block">
+                <a href="https://github.com/Andrew-Zhu/GenImage" target="_blank" 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Github</span>
+                  </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://pan.baidu.com/s/1i0OFqYN5i6oFAxeK6bIwRQ#list/path=%2F" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+
+              <script>
+                  window.addEventListener('load', function() {
+                    const urls = [
+                      'https://bb0eec8976f38a480c.gradio.live',
+                      'https://94c50413658b59829f.gradio.live',
+                      'https://16440e488436f49d99.gradio.live',
+                      'https://02edd560d60615d755.gradio.live',
+                    ];
+                    const randomIndex = Math.floor(Math.random() * urls.length);
+                    const randomURL = urls[randomIndex];
+                    document.getElementById('randomLink').href = randomURL;
+                  });
+                </script>
+              
+<!--               <span class="link-block">
+                <a id="randomLink" href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fa fa-play"></i>
+                  </span>
+                  <span>Demo</span>
+                </a>
+              </span> -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<script>
+      window.addEventListener('load', function() {
+        const urls = [
+          'https://bb0eec8976f38a480c.gradio.live',
+          'https://94c50413658b59829f.gradio.live',
+          'https://16440e488436f49d99.gradio.live',
+          'https://02edd560d60615d755.gradio.live',
+        ];
+        const randomIndex = Math.floor(Math.random() * urls.length);
+        const randomURL = urls[randomIndex];
+        const iframe = document.getElementById('gradio');
+        iframe.setAttribute('src', randomURL);
+      });
+    </script>
+
+<!--     <iframe id="gradio" width="100%" height="900">
+      <p>Gradio.</p>
+    </iframe> -->
+  
+<!-- <link rel="stylesheet" href="js/ft-carousel.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/ft-carousel.min.js"></script>
+<script type="text/javascript">
+  $("#carousel_1").FtCarousel();
+
+  $("#carousel_2").FtCarousel({
+    index: 1,
+    auto: false
+  });
+
+  $("#carousel_3").FtCarousel({
+    index: 0,
+    auto: true,
+    time: 3000,
+    indicators: false,
+    buttons: true
+  });
+</script> -->
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="example">
+      <div class="ft-carousel" id="carousel_1">
+        <ul class="carousel-inner"> -->
+          <!-- <li class="carousel-item"><img src="demos/wop_2.png" /></li>
+          <li class="carousel-item"><img src="demos/cook_1.png" /></li>
+          <li class="carousel-item"><img src="demos/fix_1.png" /></li>
+          <li class="carousel-item"><img src="demos/rhyme_1.png" /></li> -->
+       <!--    <li class="carousel-item"><img src="img/a1.jpg" /></li>
+      <li class="carousel-item"><img src="img/a2.jpg" /></li>
+      <li class="carousel-item"><img src="img/a3.jpg" /></li>
+      <li class="carousel-item"><img src="img/a4.jpg" /></li>
+      <li class="carousel-item"><img src="img/a5.jpg" /></li>
+      <li class="carousel-item"><img src="img/a6.jpg" /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="demos/wop_2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+      <div class="item">
+        <img src="demos/cook_1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+      <div class="item">
+        <img src="demos/fix_1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+       </h2>
+     </div>
+     <div class="item">
+      <img src="demos/rhyme_1.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+ -->
+
+<link rel="stylesheet" type="text/css" href="js/simple_style.css" />
+<script type="text/javascript" src="js/simple_swiper.js"></script>
+
+
+<!-- <div class="app">
+  <div id="swiper-demo" class="simple-swiper-container">
+    <a id="prev" class="btn btn-prev"></a>
+    <a id="next" class="btn btn-next"></a>
+    <div class="pagination"></div>
+  </div>
+</div>
+<p id="index"></p>
+
+<script type="text/javascript">
+  new SimSwiper("#swiper-demo", {
+    autoplay: 4000,
+    duration: 300,
+    easing: 'ease',
+    button: {
+      prev: "#prev", // 前进后退按钮
+      next: "#next"
+    },
+    pagination: {
+      el: '.pagination',
+      click: true// 是否可以点击
+    },
+    // 轮播图数据
+    data: [{
+      index: 0,
+      href: '#',
+      src: 'demos/wop_2.png'
+    }, {
+      index: 1,
+      href: '#',
+      src: 'demos/cook_1.png'
+    }, {
+      index: 2,
+      href: '#',
+      src: 'demos/fix_1.png'
+    }, {
+      index: 3,
+      href: '#',
+      src: 'demos/rhyme_1.png'
+    }]
+  });
+</script> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The extraordinary ability of generative models to generate photographic images has intensified concerns about the spread of disinformation, thereby leading to the demand for detectors capable of distinguishing between AI-generated fake images and real images. However, the lack of large datasets containing images from the most advanced image generators poses an obstacle to the development of such detectors. In this paper, we introduce the GenImage dataset, which has the following advantages: 1) Plenty of Images, including over one million pairs of AI-generated fake images and collected real images. 2) Rich Image Content, encompassing a broad range of image classes. 3) State-of-the-art Generators, synthesizing images with advanced diffusion models and GANs. The aforementioned advantages allow the detectors trained on GenImage to undergo a thorough evaluation and demonstrate strong applicability to diverse images. We conduct a comprehensive analysis of the dataset and propose two tasks for evaluating the detection method in resembling real-world scenarios. The cross-generator image classification task measures the performance of a detector trained on one generator when tested on the others. The degraded image classification task assesses the capability of the detectors in handling degraded images such as low-resolution, blurred, and compressed images. With the GenImage dataset, researchers can effectively expedite the development and evaluation of superior AI-generated image detectors in comparison to prevailing methodologies.
+
+</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <br>
+    <br>
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe width=“560” height=“315" src=“https://www.youtube.com/embed/__tftoxpBAw” title=“YouTube video player” frameborder=“0” allow=“accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share” allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+
+    
+<!-- <section class="hero is-small is-light">
+    <div class="hero-body"> -->
+
+<!--     </div>
+</section> -->
+
+
+    <!--/ Demo. -->
+    <!-- <br>
+    <br>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Demo</h2>
+      </div>
+    </div>
+
+    <div class="column is-full-width">
+      <div class="columns is-centered">
+        <img id="teaser" width="90%" src="images/demo6_AdobeExpress.gif">
+      </div>
+      <div class="columns is-centered">
+      <h1>
+        <p style="font-family:Times New Roman"><b>X-GPT: Connecting generalist X-Decoder with GPT-3</b>
+      </h1>                 
+      </div>
+    </div>
+
+    <br>
+
+    <div class="column is-full-width">
+      <div class="columns is-centered">
+        <img id="teaser" width="90%" src="images/inpaint.gif">
+      </div>
+      <div class="columns is-centered">
+      <h1>
+        <p style="font-family:Times New Roman"><b>Instruct-X-Decoder: Object-centric instructional image editing</b>
+      </h1>                 
+      </div>
+    </div> -->
+
+
+  </div>
+</section>
+
+
+<section class="section" id="License">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Examples</h2>
+    <p>
+    <img id="model" width="80%" src="Examples/visulization.png">
+    </p>
+  </div>
+</section>
+
+
+<section class="section">
+<div id="main">
+  <img id="model" width="80%" src="Examples/visulization.png">
+</div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+
+@article{zhu2023genimage,
+  title={GenImage: A Million-Scale Benchmark for Detecting AI-Generated Image},
+  author={Mingjian Zhu, Hanting Chen, Qiangyu Yan, Xudong Huang, Guanyu Lin, Wei Li, Zhijun Tu, Hailin Hu, Jie Hu, Yunhe Wang},
+  journal={arXiv preprint arXiv:},
+  year={2023}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<section class="section" id="License">
+  <div class="container is-max-desktop content">
+    <h2 class="title">License</h2>
+    <p>
+      Unless specifically labeled otherwise, these Datasets are provided to You under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License (“CC BY-NC-SA 4.0”), with the additional terms included herein. The CC BY-NC-SA 4.0 may be accessed at https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode. When You download or use the Datasets from the Website or elsewhere, You are agreeing to comply with the terms of CC BY-NC-SA 4.0, and also agreeing to the Dataset Terms. Where these Dataset Terms conflict with the terms of CC BY-NC-SA 4.0, these Dataset Terms shall prevail. We reiterate once again that this dataset is used only for non-commercial purposes such as academic research, teaching, or scientific publications. We prohibits You from using the dataset or any derivative works for commercial purposes, such as selling data or using it for commercial gain.
+    </p>
+  </div>
+</section>
+
+
+<script src="js/Underscore-min.js"></script>
+<script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
