@@ -10,7 +10,7 @@ This dataset has the following advantages:
 - Rich Image Content: Using the same classes in ImageNet, i.e., 1000 classes images.
 - State-of-the-art Generators: Midjourney, Stable Diffusion, ADM, GLIDE, Wukong, VQDM, BigGAN.
 
-<img src='https://github.com/Andrew-Zhu/GenImage/blob/main/Examples/visulization.png' width=1200>
+<img src='https://github.com/Andrew-Zhu/GenImage/tree/main/Examples/visulization.png' width=1200>
 
 ## Dataset
 
