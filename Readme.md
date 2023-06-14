@@ -14,7 +14,7 @@ This dataset has the following advantages:
 
 
 <div align=center>
-<img src='Examples/visulization.png' width=400>
+<img src='Examples/visulization.png' width=750>
 </div>
 
 ## Dataset
