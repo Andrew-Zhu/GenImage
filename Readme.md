@@ -1,9 +1,11 @@
 # GenImage: A Million-Scale Benchmark for Detecting AI-Generated Image [[Homepage]](https://genimage-dataset.github.io/)
 **Mingjian Zhu, Hanting Chen, Qiangyu Yan, Xudong Huang, Guanyu Lin, Wei Li, Zhijun Tu, Hailin Hu, Jie Hu, Yunhe Wang**
 
-This is a temporary repository. We strongly recommend you visit our [official repository](https://genimage-dataset.github.io/](https://github.com/GenImage-Dataset/GenImage).
+This is a temporary repository. We strongly recommend you visit our [official repository](https://github.com/GenImage-Dataset/GenImage). We also recommend you visit our [homepage](https://genimage-dataset.github.io/). 
+
 If this project helps you, we hope you can fork, watch, and give a star to our official repository.
-We also recommend you visit our [homepage](https://genimage-dataset.github.io/). 
+
+ 
 
 This repository contains the GenImage dataset and the evaluated methods.
 GenImage is a million-scale AI-generated image detection dataset.
