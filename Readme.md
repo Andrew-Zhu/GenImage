@@ -3,7 +3,7 @@
 
 This is a temporary repository. We strongly recommend you visit our [official repository](https://github.com/GenImage-Dataset/GenImage). We also recommend you visit our [homepage](https://genimage-dataset.github.io/). 
 
-If this project helps you, we hope you can fork, watch, and give a star to our official repository.
+If this project helps you, please fork, watch, and give a star to our official repository.
 
  
 
